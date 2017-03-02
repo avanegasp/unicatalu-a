@@ -3,93 +3,146 @@
 <head>
 <meta charset="UTF-8">
 <title>ACTIVIDAD DIAGNOSTICA</title>
-
-<script src="js/app.js"></script>
 </head>
 
 <style>
+/* Presentacion */
 
-body {
-	background:#A4F2C6;
-}
-
-img{
-	width: 50%;
-}
-
-footer {
-	text-align: center;
-}
-
-h4 {
-	text-align: center;
-	font-weight: bold;
-}
-
-footer {
+.container {
+	background: purple;
 	padding: 50px;
-	background: white;
+}
+
+.container nav {
+	text-align: right;
+}
+
+.container nav a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+}
+
+#presentation h1 {
+	margin-left: 50px;
+	color: white;
+	font-size: 55px;
+}
+#presentation p {
+	color: white;
+	font-size: 25px;
+	margin-left: 50px;
+}
+
+/* hobbies */
+
+
+#hobbies {
+	background: #A4F2C6;
+	padding: 30px;
+}
+
+#hobbies h2 {
+	padding: 15px;
+	font-size: 35px;
+	margin-left: 50px;
+}
+
+#hobbies li {
+	font-size: 20px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+
+/* Lugares */
+
+#lugares {
+	padding: 30px;
+	background: pink;
+}
+
+#lugares img{
+	width: 33%;
+	height: 200px;
+}
+
+#lugares h3 {
+	padding: 15px;
+	font-size: 30px;
+}
+
+#lugares p {
+	margin-left: 15px;
+	font-size: 20px;
+}
+/*footer */
+
+
+footer{
+	padding: 50px;
+	background: #F4F472;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: green;
 }
 
 </style>
 
 
 <body>
-	<header>
-		<nav>
-			<a href="">presentación</a>
-		</nav>
-	</header>
 
-	<h1>PRESENTACION</h1>
+	<div class="container">
+				<header>
+				  <nav>
+					<a href="#home" class="active">HOME</a>
+					<a href="#acerca de">ACERCA DE</a>
+					<a href="#trabajos">TRABAJOS</a>
+					<a href="#blogs">BLOGS</a>
+					<a href="#contacto">CONTACTO</a>
+				  </nav>
+				</header>
+		<div class>
+			<section id="presentation">
+					<h1>Hola</h1> 
+					<p>Mi nombre es Angie Vanegas, soy médica veterinaria y actalmente estoy estudiando desarrollo web Front-end, me gusta mucho diseñar páginas y que tengan interactividad</p>
+			</section>	
+		</div>
+	</div>
 
-	<p>Hola, mi nombre es Angie Vanegas, soy médica veterinaria y actalmente estoy estudiando desarrollo web Front-end, me gusta mucho diseñar páginas y que tengan interactividad</p>
+	<hr>
 
-	<section> 
+	<section id="hobbies"> 
 		<h2>Mis Hobbies son: </h2>
 		<ul>
-			<li><I>Ir al cine</li>
+			<li>Ir al cine</li>
 			<li>Leer</li>
 			<li>Escuchar música</li>
 			<li>Hablar con mis amigos</li>
 		</ul>
-
-		<h3>Lugares donde he vivido</h3>
-		<p>Amo viajar, así que les mostraré donde he vivido: </p>
-
-		<h4> TUNJA </h4>
-		<img src="http://www.rcnradio.com/wp-content/uploads/2015/09/tunja-nochen-alcaldia.jpg" alt="Tunja">
-
-		<hr>
-		
-		<h4>BUCARAMANGA (Ciudad Bonita)</h4>
-		<img src="http://www.hotelcabeceracountry.com/bucaramanga/images/otros/bucaramanga.jpg" alt="Ciudad Bonita">
-
-		<hr>
-
-		<h4>CARTAGENA</h4>
-		<img src="http://auth.maktour.com.br/Arquivos/Pacote/imagem/1881.JPG" alt="Cartagena">
-		
-		<hr>
-
-		<h4>MEDELLÍN</h4>
-		<img src="http://www.hotelpark10.com.co/pagomio/wp-content/uploads/2014/10/medellin-colombia-hotelpark10.jpg" alt="Medellín">
-
-		<hr>
-
-		<h4>RIO DE JANEIRO</h4>
-		<img src="http://www.brasilalacarta.com/base/ui/galery/blog/3.jpg" alt="Rio de Janeiro">
-		
-		<hr>
-
-		<h4>BOGOTÁ</h4>
-		<img src="http://lasillavacia.com/sites/default/files/lasillallena/portadas/bogota_1.jpg" alt="Bogotá">
-
 	</section>
 
+	<hr>
+
+	<section id="lugares">
+		<h3>Lugares donde he vivido</h3>
+		<p>Amo viajar, así que les mostraré donde he vivido: </p>
+		
+		<img src="http://www.rcnradio.com/wp-content/uploads/2015/09/tunja-nochen-alcaldia.jpg" alt="Tunja">
+		<img src="http://www.hotelcabeceracountry.com/bucaramanga/images/otros/bucaramanga.jpg" alt="Ciudad Bonita">
+		<img src="http://auth.maktour.com.br/Arquivos/Pacote/imagem/1881.JPG" alt="Cartagena">
+		<img src="http://www.hotelpark10.com.co/pagomio/wp-content/uploads/2014/10/medellin-colombia-hotelpark10.jpg" alt="Medellín">
+		<img src="http://www.brasilalacarta.com/base/ui/galery/blog/3.jpg" alt="Rio de Janeiro">
+		<img src="http://lasillavacia.com/sites/default/files/lasillallena/portadas/bogota_1.jpg" alt="Bogotá">
+	</section>
+	
+	<hr>
+	
 		<footer>
-			<a href="https://avanegasp.github.io/"> Mi Portafolio</a>
-			<a href="https://avanegasp.github.io/"> Mi Linkedin</a>
+			<a href="https://avanegasp.github.io/"> Portafolio</a>
+			<a href="https://avanegasp.github.io/"> Linkedin</a>
 		</footer>
 
 </body>
