@@ -18,20 +18,23 @@
 }
 
 .container nav a {
+	font-size: 20px;
 	text-decoration: none;
-	color: white;
+	color: pink;
 	padding: 10px;
 }
 
 #presentation h1 {
-	margin-left: 50px;
+	padding: 50px 0;
+	margin-left: 70px;
 	color: white;
-	font-size: 55px;
+	font-size: 85px;
 }
 #presentation p {
 	color: white;
-	font-size: 25px;
-	margin-left: 50px;
+	font-size: 30px;
+	margin-left: 60px;
+	margin-bottom: 50px;
 }
 
 /* hobbies */
@@ -43,8 +46,8 @@
 }
 
 #hobbies h2 {
-	padding: 15px;
-	font-size: 35px;
+	padding: 35px;
+	font-size: 45px;
 	margin-left: 50px;
 }
 
@@ -68,13 +71,64 @@
 
 #lugares h3 {
 	padding: 15px;
-	font-size: 30px;
+	font-size: 50px;
+	margin-left: 60px;
+
 }
 
 #lugares p {
 	margin-left: 15px;
-	font-size: 20px;
+	font-size: 30px;
+	margin-left: 60px;
 }
+
+/* Conctact */
+
+#contact-nav h2{
+	padding: 30px;	
+	font-size: 50px;
+	text-align: center;
+
+}
+
+#contact-nav {
+	background: #E9B0F7; 
+}
+
+.contact{
+	padding: 70px;
+	text-align: center; 
+}
+
+.contact input{
+	padding: 8px;
+	border-radius: 10px;
+	background: #F2F4F4;
+}
+
+.message textarea{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background: #F2F4F4;
+	border: 10px;
+	padding: 15px 10px;
+	width: 570px;
+	height: 150px;
+}
+
+.send{
+	background: white;
+	padding: 8px 25px;
+	border-radius: 8px;
+	border: 1px solid #ff0047;
+	color: #ff0047;
+	font-weight: bold;
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
 /*footer */
 
 
@@ -85,10 +139,14 @@ footer{
 }
 
 footer a {
+	font-size: 25px;
 	text-decoration: none;
 	color: green;
 }
 
+footer p {
+	color: grey;
+}
 </style>
 
 
@@ -98,16 +156,15 @@ footer a {
 				<header>
 				  <nav>
 					<a href="#home" class="active">HOME</a>
-					<a href="#acerca de">ACERCA DE</a>
-					<a href="#trabajos">TRABAJOS</a>
-					<a href="#blogs">BLOGS</a>
-					<a href="#contacto">CONTACTO</a>
+					<a href="#hobbies">HOBBIES</a>
+					<a href="#lugares">LUGARES</a>
+					<a href="#contact-nav">CONTACTO</a>
 				  </nav>
 				</header>
 		<div class>
 			<section id="presentation">
-					<h1>Hola</h1> 
-					<p>Mi nombre es Angie Vanegas, soy médica veterinaria y actalmente estoy estudiando desarrollo web Front-end, me gusta mucho diseñar páginas y que tengan interactividad</p>
+					<h1>Hola!!</h1> 
+					<p>Mi nombre es Angie Vanegas, soy médica veterinaria y actualmente estoy estudiando desarrollo web Front-end, me gusta mucho diseñar páginas y que tengan interactividad</p>
 			</section>	
 		</div>
 	</div>
@@ -140,14 +197,34 @@ footer a {
 	
 	<hr>
 	
-		<footer>
-			<a href="https://avanegasp.github.io/"> Portafolio</a>
-			<a href="https://avanegasp.github.io/"> Linkedin</a>
-		</footer>
+	<section id="contact-nav">
+		<form action="https://formspree.io/arco527@gmail.com" method="POST">
+			<div class="contact">
+					<input type="text" name="Nombre" placeholder="Nombre"/>
+					<input type="text" name="Celular" placeholder="Celular"/>
+					<input type="text" name="Correo" placeholder="Correo"/>
+					<div class="message">
+						<textarea name="mensaje" placeholder="Mensaje"></textarea>
+					</div>
+				<button type= "submit" class="send" value="Send">Enviar</button>
+			</div>
+		</form>
+	</section>
+
+	 <hr>
+	
+	<footer>
+		<a href="https://avanegasp.github.io/"> Portafolio</a><a href="https://avanegasp.github.io/"> Linkedin</a>
+		<p>Colombia - 2017 Realizado con: Sublime Text</p>
+	</footer>
 
 </body>
 
 </html>
+
+
+
+
 
 
 
